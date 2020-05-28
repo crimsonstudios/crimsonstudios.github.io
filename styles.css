@@ -1,6 +1,50 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  width: 100vw;
+}
+
+.header {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-image: url('./assets/mainbg1.png');
+  color: white;
+}
+
+.nav-color {
+  color: white;
+}
+
+.header a {
+  color: white;
+}
+
+.section {
+  padding: 0;
+  margin: 0;
+}
+
+.section-crimson {
+  padding: 0;
+  background-color: #990000;
+}
+
+.section-crimson h1 {
+  color: white;
+}
+
+.section-crimson .services-item {
+  color: white;
+}
+
 h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
+  color: #990000;
 }
 
 h2 {
@@ -18,3 +62,13 @@ h5,
 h6 {
   font-family: "Playfair Display", serif;
 }
+
+.contact-button {
+  background-color: #990000 !important;
+  border-color: #990000 !important;
+}
+
+.contact-button:hover {
+  background-color: #801a1a !important;
+  border-color: #801a1a !important;
+} 
