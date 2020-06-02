@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="html" lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
     <title>Crimson Studios</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;900&display=swap"
@@ -18,46 +21,133 @@
   </head>
   <body style="text-align: center;" class="container-fluid">
     <div class="row">
-      <header class="container-fluid header min-vh-100 h-100">
-        <nav class="navbar sticky-top navbar-expand-sm navbar-dark">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#collapsibleNavbar"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav">
-              <li class="nav-item nav-color">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#services">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#technologies">Technologies</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+      <nav
+        class="navbar fixed-top navbar-expand-sm navbar-dark nav-color-override"
+      >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#technologies">Technologies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-        <div id="home">
-          <div class="col-12 mt-5 pt-5">
-            <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 float-right">
-              <h1>Crimson Studios</h1>
-              <span>DIGITAL CONSULTANCY</span>
+      <header class="container-fluid header min-vh-100 vh-100 hash" id="home">
+        <div id="home" class="h-100">
+          <div class="row">
+            <div class="col-6 mt-5 pt-5 h-100">
+              <div
+                class="h-50 p-lg-3 p-md-3 p-sm-2 p-xs-2 m-lg-5 m-md-4 m-sm-1 m-xs-1 col-lg-6 col-md-12 col-sm-12 float-left"
+              >
+                <h1>Crimson Studios</h1>
+                <span>DIGITAL CONSULTANCY</span>
+              </div>
+            </div>
+            <div class="col-6 mt-5 pt-5 h-100">
+              <div
+                class="p-lg-1 p-md-3 p-sm-2 p-xs-2 m-lg-2 m-md-4 m-sm-1 m-xs-1 col-lg-6 col-md-12 col-sm-12 float-left"
+              >
+                <h2 class="text-right">Application Development</h2>
+              </div>
+              <div
+                class="p-lg-1 p-md-3 p-sm-2 p-xs-2 m-lg-2 m-md-4 m-sm-1 m-xs-1 col-lg-6 col-md-12 col-sm-10float-left"
+              >
+                <h2 class="text-right">Hosting</h2>
+              </div>
+              <div
+                class="p-lg-1 p-md-3 p-sm-2 p-xs-2 m-lg-2 m-md-4 m-sm-1 m-xs-1 col-lg-6 col-md-12 col-sm-12 float-left"
+              >
+                <h2 class="text-right">Consulting</h2>
+              </div>
+
+              <a
+                href="#contact"
+                class="p-lg-1 p-md-3 p-sm-2 p-xs-2 m-lg-2 mt-lg-5 m-md-4 m-sm-1 m-xs-1 col-lg-6 col-md-12 col-sm-12 float-left home-git"
+              >
+                <h2 class="text-center">Get in touch!</h2>
+                <h3 class="text-center font-weight-bold">></h3>
+              </a>
             </div>
           </div>
         </div>
       </header>
     </div>
 
-    <div class="padding section min-vh-100 h-100" id="services">
+    <div class="padding section min-vh-100 h-100 hash" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1 class="text-center pb-0 p-5">About Us</h1>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 p-5">
+            <div class="avatar">
+              <img
+              src="./assets/chin2.jpeg"
+              class="img-fluid img-thumbnail"
+              alt="Cinque Terre"
+              />
+              <p>Zac</p>
+              <small>Big penis</small>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12 p-5 about-blurb align-text-bottom">
+            <p class="align-text-bottom">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            </div>
+          
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 p-5">
+            <div class="avatar">
+              <img
+              src="./assets/chin2.jpeg"
+              class="img-fluid img-thumbnail"
+              alt="Cinque Terre"
+              />
+              <p>Kenny</p>
+              <small>The Hipster</small>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12 p-5 about-blurb align-text-bottom">
+            <p class="align-text-bottom">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            </div>
+          
+          </div>
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="padding section min-vh-100 h-100 hash" id="services">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -90,7 +180,7 @@
       </div>
     </div>
 
-    <div class="row section-crimson min-vh-100 h-100" id="technologies">
+    <div class="row section-crimson min-vh-100 h-100 hash" id="technologies">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -116,7 +206,7 @@
       </div>
     </div>
 
-    <div class="row section min-vh-100 h-100" id="contact">
+    <div class="row section min-vh-100 h-100 hash" id="contact">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -172,6 +262,7 @@
         </div>
       </div>
     </div>
+
     <footer>
       <hr />
       <div class="row">
@@ -198,5 +289,45 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      var overrideClass = "nav-color-black-override";
+
+      var header = $(".navbar-dark .navbar-nav .nav-link");
+
+      $(function () {
+        var currentHash = "home";
+        $(document).scroll(function () {
+          $(".hash").each(function (i, obj) {
+            var top = window.pageYOffset;
+            var distance = top - $(this).offset().top;
+            var hash = $(this).attr("id");
+
+            if (distance < 50 && distance > -50 && currentHash != hash) {
+              // window.location.hash = hash;
+              currentHash = hash;
+
+              switch (currentHash) {
+                case "home":
+                  header.removeClass(`${overrideClass}`);
+                  break;
+                case "about":
+                  header.addClass(`${overrideClass}`);
+                  break;
+                case "services":
+                  header.addClass(`${overrideClass}`);
+                  break;
+                case "technologies":
+                  header.removeClass(`${overrideClass}`);
+                  break;
+                case "contact":
+                  header.addClass(`${overrideClass}`);
+                  break;
+              }
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>

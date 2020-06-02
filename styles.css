@@ -2,7 +2,8 @@ html, body {
   margin: 0;
   padding: 0;
   font-size: 18px;
-  width: 100vw;
+  width: 100%;
+  scroll-behavior: smooth;
 }
 
 .header {
@@ -11,11 +12,27 @@ html, body {
   width: 100vw;
   display: flex;
   flex-direction: column;
-  background-image: url('./assets/mainbg1.png');
   color: white;
+  background-image: url('./assets/mainbg1.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
-.nav-color {
+.header-content {
+  color: white;
+  border: 2px white solid;
+  background-color: #990000;
+}
+
+/* #home h1 {
+  color: white;
+} */
+
+.nav-color-black-override {
+  color: black !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
   color: white;
 }
 
@@ -72,3 +89,26 @@ h6 {
   background-color: #801a1a !important;
   border-color: #801a1a !important;
 } 
+
+.home-git {
+  border: 2px white solid;
+  border-radius: 1.5rem;
+}
+
+.home-git:hover {
+  background-color: white;
+  cursor: pointer;
+  color: #990000;
+  text-decoration: none;
+}
+
+.avatar img {
+  border-radius: 100px;
+  margin-bottom: 1.6rem;
+  margin-top: 2rem;
+  width: 200px;
+}
+
+.about-blurb {
+  display: inline;
+}
