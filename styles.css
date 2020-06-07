@@ -2,20 +2,33 @@ html, body {
   margin: 0;
   padding: 0;
   font-size: 18px;
-  width: 100vw;
+  width: 100%;
+  scroll-behavior: smooth;
 }
 
 .header {
   padding: 0;
   margin: 0;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  background-image: url('./assets/mainbg1.png');
   color: white;
+  background-image: url('./assets/mainbg1.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
-.nav-color {
+.header-content {
+  color: white;
+  border: 2px white solid;
+  background-color: #990000;
+}
+
+.nav-color-black-override {
+  color: black !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
   color: white;
 }
 
@@ -64,11 +77,75 @@ h6 {
 }
 
 .contact-button {
-  background-color: #990000 !important;
-  border-color: #990000 !important;
+  background-color: white !important;
+  border-color: #801a1a !important;
+  color: black;
 }
 
 .contact-button:hover {
   background-color: #801a1a !important;
-  border-color: #801a1a !important;
+  border-color: white !important;
 } 
+
+.home-git {
+  border: 2px white solid;
+  border-radius: 1.5rem;
+}
+
+.home-git:hover {
+  background-color: white;
+  cursor: pointer;
+  color: #990000;
+  text-decoration: none;
+}
+
+#about .avatar img {
+  border-radius: 100px;
+  margin-bottom: 1.6rem;
+  margin-top: 2rem;
+  width: 200px;
+}
+
+#services .avatar img {
+  border-radius: 20px;
+  margin-bottom: 1.6rem;
+  margin-top: 2rem;
+  width: 100px;
+  height: 75px;
+}
+
+.about-blurb {
+  display: inline;
+}
+
+form label {
+  color: white;
+}
+
+form small {
+  color: white;
+}
+
+
+
+/* OVERRIDES */
+
+.min-vh-75 {
+  min-height: 75vh!important;
+}
+
+.min-vh-50 {
+  min-height: 50vh!important;
+}
+
+@media only-screen and (max-width: 768px) {
+  .min-vh-md-50 {
+    min-height: 50vh!important;
+  }
+}
+
+@media only-screen and (min-width: 992px) {
+  .min-vh-lg-100 {
+    min-height: 100vh!important;
+  }
+}
