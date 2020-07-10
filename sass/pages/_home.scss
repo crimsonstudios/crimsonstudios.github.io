@@ -1,0 +1,453 @@
+.button {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: block;
+  text-align: right;
+
+  &-text {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: white;
+    padding: 1rem 4rem 1rem 4rem;
+    background-color: #aa1913;
+    border-radius: 2rem;
+    border: 0;
+    text-decoration: none;
+    outline: 0;
+  }
+}
+
+.section-landing {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(#2b2b2b, 0.9),
+      rgba(black, 0.9)
+    ),
+    url(../img/work.jpg);
+  background-size: cover;
+
+  &-body {
+    padding: 1.5rem;
+    padding-top: 0;
+    margin: 0 auto;
+    height: 70vh;
+    position: relative;
+    width: 80em;
+
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+
+  .logo {
+    margin-top: 1.5rem;
+  }
+
+  .landing {
+    position: absolute;
+    top: 50%;
+    right: 1.5rem;
+    transform: translate(0%, -50%);
+    text-align: right;
+
+    &-header {
+      color: white;
+      font-size: 3.5rem;
+      font-weight: 700;
+    }
+
+    &-text {
+      color: #e78655;
+      font-size: 1.7rem;
+      font-weight: 400;
+      padding: 1.5rem 0;
+    }
+
+    &-emphasis {
+      color: #e78655;
+      font-size: 3.7rem;
+      font-weight: 700;
+      font-style: italic;
+      line-height: 5rem;
+    }
+
+    &-emphasis-red {
+      color: #d65651;
+      font-size: 3.7rem;
+      font-weight: 700;
+      font-style: italic;
+      line-height: 5rem;
+    }
+  }
+}
+
+.section-services {
+  background-color: #fffdf9;
+
+  &-body {
+    padding: 1.5rem;
+    width: 80em;
+    margin: 0 auto;
+
+    @include respond(phone) {
+      width: 100%;
+    }
+
+    &-content {
+      display: flex;
+      flex: 1;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 1.5rem 0;
+    }
+  }
+
+  .heading-text {
+    color: #21001e;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+
+  .service {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+
+    @include respond(phone) {
+      display: block;
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+
+    &-heading {
+      color: #21001e;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    &-body {
+      color: #21001e;
+      font-size: 2.2rem;
+      font-weight: 400;
+      text-align: center;
+      flex: 1;
+    }
+  }
+
+  .service:nth-child(odd) {
+    margin-right: 1.5rem;
+
+    @include respond(phone) {
+      margin-right: 0;
+    }
+  }
+
+  .tech-icons {
+    text-align: center;
+    margin-top: 1.5rem;
+
+    .icon:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  .italic-text {
+    color: #21001e;
+    font-size: 2.2rem;
+    font-weight: 400;
+    font-style: italic;
+    padding: 1.5rem 0;
+    text-align: right;
+  }
+}
+
+.section-about-us {
+  background-color: #21001e;
+
+  &-body {
+    padding: 1.5rem 0;
+    padding-bottom: 0;
+    width: 80em;
+    margin: 0 auto;
+
+    @include respond(phone) {
+      width: 100%;
+    }
+
+    &-content {
+      display: flex;
+      flex: 1;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 1.5rem 0;
+
+      @include respond(phone) {
+        padding: 0;
+      }
+    }
+  }
+
+  .heading-text {
+    color: #ffffff;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .profile {
+    background-color: #4c4967;
+    padding: 1.5rem;
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+
+    @include respond(phone) {
+      display: block;
+      width: 100%;
+      margin-bottom: 1.5rem;
+    }
+
+    &-header {
+      @include clearfix;
+
+      &-titles {
+        float: left;
+      }
+    }
+
+    &-name {
+      color: white;
+      font-size: 2.7rem;
+      font-weight: 700;
+    }
+
+    &-subtitle {
+      color: white;
+      font-weight: 600;
+      font-family: "Lora", serif;
+      font-style: italic;
+      font-size: 2.2rem;
+      padding: 1.5rem 0;
+    }
+
+    &-image {
+      float: right;
+      overflow: hidden;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+
+    &-body {
+      color: white;
+      font-size: 2.2rem;
+      flex: 1;
+    }
+  }
+
+  .profile:nth-child(odd) {
+    margin-right: 1.5rem;
+
+    @include respond(phone) {
+      margin-right: 0;
+    }
+  }
+
+  .companies {
+    background-color: #342d39;
+    border-top: 0.5rem solid #4c4967;
+    border-bottom: 0.5rem solid #4c4967;
+
+    padding: 0 1.5rem;
+    padding-bottom: 1.5rem;
+
+    &-heading {
+      font-size: 2.5rem;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 0;
+    }
+
+    &-recent {
+      text-align: center;
+
+      &-image:not(:last-child) {
+        padding-right: 1.5rem;
+      }
+    }
+
+    &-previous {
+      text-align: center;
+      padding-top: 1rem;
+
+      &-image:not(:last-child) {
+        padding-right: 1.5rem;
+      }
+    }
+  }
+}
+
+.section-recent-project {
+  background-color: #21001e;
+
+  &-body {
+    padding: 1.5rem;
+    width: 80em;
+    margin: 0 auto;
+
+    @include respond(phone) {
+      width: 100%;
+    }
+
+    &-content {
+      display: flex;
+      flex: 1;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+      padding: 1.5rem 0;
+
+      @include respond(phone) {
+        display: block;
+      }
+    }
+  }
+
+  .heading-text {
+    color: #ffffff;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+
+  .showcase {
+    flex: 1;
+    margin-bottom: 1.5rem;
+    text-align: center;
+
+    .recent-project-image {
+      max-width: 49%;
+      transform: translate(0, -75px);
+    }
+
+    .recent-project-screenshot {
+      max-width: 49%;
+    }
+  }
+
+  .recent-project-body {
+    flex: 1;
+
+    &-text {
+      color: white;
+      font-weight: 500;
+      font-size: 2.2rem;
+      line-height: 2.9rem;
+      padding-bottom: 1.5rem;
+    }
+  }
+}
+
+.section-contact {
+  background-color: #fffdf9;
+
+  &-body {
+    padding: 1.5rem;
+    width: 80em;
+    margin: 0 auto;
+
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+
+  .heading-text {
+    color: #21001e;
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+
+  .contact-form {
+    &-label {
+      color: #21001e;
+      display: block;
+      font-size: 2.7rem;
+      font-weight: 700;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    &-input {
+      width: 100%;
+      background-color: white;
+      border-radius: 1.5rem;
+      border-width: 1px;
+      border-color: #21001e;
+      color: #21001e;
+      font-size: 2rem;
+      font-family: sans-serif;
+      font-weight: 400;
+      padding: 1rem;
+    }
+
+    &-input:focus {
+      outline: none;
+      border-color: #e78655;
+    }
+
+    &-textarea {
+      resize: none;
+      width: 100%;
+      background-color: white;
+      border-radius: 1.5rem;
+      border-width: 1px;
+      border-color: #21001e;
+      color: #21001e;
+      font-size: 2rem;
+      font-family: sans-serif;
+      font-weight: 400;
+      padding: 1rem;
+    }
+
+    &-textarea:focus {
+      outline: none;
+      border-color: #e78655;
+    }
+  }
+
+  .serif-text {
+    color: #21001e;
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: "Lora", serif;
+    font-style: italic;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    line-height: 2.4rem;
+  }
+}
+
+.footer {
+  &-body {
+    padding: 1.5rem;
+    width: 80em;
+    margin: 0 auto;
+
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+
+  &-text {
+    color: #21001e;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+  }
+}
